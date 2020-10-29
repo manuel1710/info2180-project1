@@ -4,8 +4,85 @@ body {
     font-size: 16px;
 }
 
+header h1{
+    text-align: left;
+    float:right;
+}
+header nav{
+    clear:right;
+}
+
+
+ul{
+    list-style-type: none;
+}
+
+a,li{
+    text-decoration:none;
+    padding: 5px;
+    color: black;
+}
+
+a:hover{
+    color:blue;
+}
+
+li{
+    float:left;
+}
+
+.overview-hero{
+    background-color: cornflowerblue;
+}
+.overview-hero-image img{
+    float:left;
+    height:200px;
+	width:200px;
+    margin: 15px;
+}
+
+.overview-hero-text{
+    clear:left;
+    text-align: right;
+}
+
 .container {
     margin: 0 auto;
     max-width: 960px;
     width: 100%;
+    display: grid;
+    grid-gap: 20px;
+}
+
+.cards{
+    display:grid;
+    grid-gap: 20px;
+    grid-template-columns: 220px 220px 220px;
+    margin: auto;
+    grid-auto-flow: rows;
+    margin-bottom: 20px;
+    /*border: 1px solid grey;*/
+}
+
+.card img{
+    grid-row: 1;
+}
+.card-body{
+    grid-row: 2;
+}
+.overview-hero-image{
+    float:left;
+	height:200px;
+	width:200px;
+}
+
+img{
+    height:200px;
+	width:200px;
+}
+
+@media (min-width: 500px) {
+    .container {
+
+    }
 }
