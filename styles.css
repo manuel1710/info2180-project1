@@ -3,15 +3,200 @@ body {
     margin: 0;
     font-size: 16px;
 }
+.container {
+    margin: 0 auto;
+    max-width: 700px;
+    width: 100%;
+    display: flex;
+    /* grid-gap: 20px; */
+    flex-direction: row;
+    align-items: center;
+}
 
-header h1{
+@media (min-width: 500px) {
+    .container {
+
+    }
+}
+header .container{
+    display:flex;
+    align-items: flex-end;
+}
+
+.container h1{
+    width:40%;
+    order:1;
+    font-size: 20px;
+    /* background-color: red; */
+}
+.container nav{
+    padding-left: 10%;
+    width:100%;
+    order:2;
+    font-size: 20px;
+}
+
+.overview-hero{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: cornflowerblue;
+    height: 100%;
+    width: 100%;
+    display:flex;
+}
+
+.overview-hero-image{
+    /* float:left;
+	height:200px; */
+    width:50%;
+    /* overflow: hidden; */
+}
+
+.overview-hero-text{
+    /* clear:right; */
     text-align: left;
-    float:right;
-}
-header nav{
-    clear:right;
+    /* padding-right: 20%; */
+    padding-left: 6%;
+    /* float:right; */
+    /* width: 60%; */
 }
 
+.learn-about .container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.learn-about h2{
+    width:100%;
+    padding-right: 10%;
+    color: green;
+}
+
+.cards{
+    display:grid;
+    grid-gap: 20px;
+    grid-template-columns: 220px 220px 220px;
+    /* margin: auto; */
+    grid-auto-flow: rows;
+    padding-top: 20px;
+    /* padding-left: 40px; */
+    /* padding-right: 10px; */
+    margin-bottom: 20px;
+    /* background-color: red; */
+    /* width:100%; */
+    /*border: 1px solid grey;*/
+    /* justify-content: flex-end; */
+}
+
+.card{
+    border:5px #ccc solid;    
+    /* justify-content: flex-end; */
+    /* margin: 10%; */
+    /* align-items: flex-end; */
+}
+.card img{
+    grid-row: 1;
+    margin: 2%;
+}
+.card-body{
+    grid-row: 2;
+    margin:1%;
+    
+}
+
+.testing {
+    background-color: grey;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+
+.testing-desciption{
+    text-align: left;
+    /* width: 50%; */
+    /* padding-right: 20%; */
+    color: white;
+}
+
+.cta{
+    background-color: green;
+    margin: auto;
+    width:33%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* padding-right: 1px; */
+    padding-left: 13px;
+}
+
+.cta a{
+    text-align:center;
+    color: white;
+}
+.article-body{
+    width:100%;
+}
+
+.stories{
+    padding-top: 105px;
+    padding-bottom: 105px;
+}
+.stories .container{
+    display:flex;
+    flex-direction: column;
+}
+.stories h2{
+    display:flex;
+    flex-direction: column;
+    color:blue;
+    width: 100%;
+}
+article img{
+    float:left;
+    width:150px;
+    height:150px;
+    border: 2px;
+    border-radius: 90%;
+    margin:5.5%;
+}
+
+article a{
+    color:blue;
+}
+
+.newsletter{
+    background-color: lightgreen;
+    width:100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.newsletter .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    color:white 
+}
+
+.newsletter .container p{
+    padding-left: 170px;
+    padding-right: 70px; 
+}
+.form-group{
+    float:left;
+    padding-right: 5px;
+    
+}
+input[type="email"]{
+    border:5px solid red;
+    /* border-radius: 20px; */
+}
+
+footer{
+    background-color: grey;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
 ul{
     list-style-type: none;
@@ -31,58 +216,7 @@ li{
     float:left;
 }
 
-.overview-hero{
-    background-color: cornflowerblue;
-}
-.overview-hero-image img{
-    float:left;
-    height:200px;
-	width:200px;
-    margin: 15px;
-}
-
-.overview-hero-text{
-    clear:left;
-    text-align: right;
-}
-
-.container {
-    margin: 0 auto;
-    max-width: 960px;
-    width: 100%;
-    display: grid;
-    grid-gap: 20px;
-}
-
-.cards{
-    display:grid;
-    grid-gap: 20px;
-    grid-template-columns: 220px 220px 220px;
-    margin: auto;
-    grid-auto-flow: rows;
-    margin-bottom: 20px;
-    /*border: 1px solid grey;*/
-}
-
-.card img{
-    grid-row: 1;
-}
-.card-body{
-    grid-row: 2;
-}
-.overview-hero-image{
-    float:left;
-	height:200px;
-	width:200px;
-}
-
 img{
     height:200px;
 	width:200px;
-}
-
-@media (min-width: 500px) {
-    .container {
-
-    }
 }
