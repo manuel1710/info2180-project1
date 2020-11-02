@@ -14,11 +14,11 @@ body {
     align-items: center;
 }
 
-@media (min-width: 500px) {
+/* @media (min-width: 500px) {
     .container {
 
     }
-}
+} */
 
 header{
     background-color: white;
@@ -57,7 +57,7 @@ header .container{
 .overview-hero{
     padding-top: 50px;
     padding-bottom: 50px;
-    background-color: cornflowerblue;
+    background-color: #E2E8F0;
     height: 100%;
     width: 100%;
     display:flex;
@@ -95,7 +95,7 @@ header .container{
 .cards{
     display:grid;
     grid-gap: 20px;
-    grid-template-columns: 220px 220px 220px;
+    grid-template-columns: 270px 270px 270px;
     /* margin: auto; */
     grid-auto-flow: rows;
     padding-top: 20px;
@@ -109,18 +109,24 @@ header .container{
 }
 
 .card{
-    border:5px #E2E8F0 solid;    
+    border:3px #E2E8F0 solid;    
+    /* width:300px; */
+    box-shadow: 0 4px 6px 1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    /* box-shadow: #4A5568; */
     /* justify-content: flex-end; */
-    /* margin: 10%; */
+    /* margin: 200px; */
     /* align-items: flex-end; */
 }
 .card img{
     grid-row: 1;
-    margin: 2%;
+    margin: 1%;
+    width: 257px;
+    /* width: 300px;/ */
 }
 .card-body{
     grid-row: 2;
     margin:1%;
+    /* width: 1088px; */
     
 }
 
@@ -184,8 +190,8 @@ header .container{
 }
 article img{
     float:left;
-    width:150px;
-    height:150px;
+    width:200px;
+    height:200px;
     border: 2px;
     border-radius: 90%;
     margin:5.5%;
