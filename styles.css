@@ -1,11 +1,12 @@
 /* Add your CSS to this file */
 body {
     margin: 0;
-    font-size: 16px;
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
 }
 .container {
-    margin: 0 auto;
-    max-width: 700px;
+    margin: auto;
+    max-width: 800px;
     width: 100%;
     display: flex;
     /* grid-gap: 20px; */
@@ -18,22 +19,39 @@ body {
 
     }
 }
+
+header{
+    background-color: white;
+    font-style: 18px;
+}
 header .container{
-    display:flex;
-    align-items: flex-end;
+    margin: auto;
+    max-width: 1006px;
+    width: 100%;
+    display: flex;
+    /* grid-gap: 20px; */
+    flex-direction: row;
+    align-items: center;
+    /* display:inline-flex; */
+    /* flex-wrap: wrap; */
+    /* align-items:; */
 }
 
 .container h1{
-    width:40%;
-    order:1;
-    font-size: 20px;
+    width:60%;
+    /* order:1; */
+    /* font-size: 20px; */
     /* background-color: red; */
 }
-.container nav{
-    padding-left: 10%;
-    width:100%;
-    order:2;
-    font-size: 20px;
+.container nav ul{
+    /* padding-left: 10%;/ */
+    /* width:100%; */
+    /* order:2; */
+    /* /font-size: 20px; */
+    /* display:inline-block; */
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
 }
 
 .overview-hero{
@@ -68,9 +86,10 @@ header .container{
 }
 
 .learn-about h2{
+    font-size:24px;
     width:100%;
     padding-right: 10%;
-    color: green;
+    color: #48BB78;
 }
 
 .cards{
@@ -90,7 +109,7 @@ header .container{
 }
 
 .card{
-    border:5px #ccc solid;    
+    border:5px #E2E8F0 solid;    
     /* justify-content: flex-end; */
     /* margin: 10%; */
     /* align-items: flex-end; */
@@ -105,8 +124,13 @@ header .container{
     
 }
 
+.card-body h3{
+    color: #48BB78;
+    font-size:21px;
+}
 .testing {
-    background-color: grey;
+    background-color: #4A5568;
+    color:white;
     padding-top: 70px;
     padding-bottom: 70px;
 }
@@ -120,7 +144,7 @@ header .container{
 }
 
 .cta{
-    background-color: green;
+    /* background-color: green; */
     margin: auto;
     width:33%;
     padding-top: 10px;
@@ -132,7 +156,10 @@ header .container{
 .cta a{
     text-align:center;
     color: white;
+    background-color: #48BB78;
+    border-radius: 5px;
 }
+
 .article-body{
     width:100%;
 }
@@ -148,8 +175,12 @@ header .container{
 .stories h2{
     display:flex;
     flex-direction: column;
-    color:blue;
+    color:#5A67D8;
     width: 100%;
+}
+
+.stories h3{
+    font-size: 18px;
 }
 article img{
     float:left;
@@ -161,11 +192,12 @@ article img{
 }
 
 article a{
-    color:blue;
+    color:#5A67D8;
 }
 
 .newsletter{
-    background-color: lightgreen;
+    background-color: #48BB78;
+    color:white;
     width:100%;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -187,15 +219,31 @@ article a{
     padding-right: 5px;
     
 }
+.newsletter button{
+    background-color: #5A67D8;
+    width:100px;
+    outline:none;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+form input{
+    width:200px;
+    outline:none;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
 input[type="email"]{
-    border:5px solid red;
+    /* border:5px solid red; */
     /* border-radius: 20px; */
 }
 
 footer{
-    background-color: grey;
+    background-color: #4A5568;
     padding-top: 10px;
     padding-bottom: 10px;
+    color: white;
 }
 
 ul{
@@ -205,11 +253,11 @@ ul{
 a,li{
     text-decoration:none;
     padding: 5px;
-    color: black;
+    color: #6b7280;
 }
 
 a:hover{
-    color:blue;
+    color:#5A67D8;
 }
 
 li{
